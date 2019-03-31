@@ -1,19 +1,19 @@
-<div class="container">
-  <div class="content">
-    <div class="photo">
-      <%= image_tag('avatar.png') %>
+<div class="jumbotron about">
+  <div class="row">
+    <div class="photo col-md-6 col-xs-12">
+      <%=image_tag('avatar.png', alt: 'my_photo.png', class: 'img-responsive img-custom') %>
     </div>
-    <div class="text">
+    <div class="description col-md-6 col-xs-12">
       <h1>Igor Lukashin</h1>
-      <br/>
-      <p>Junior ruby/java developer</p>
-      <p>QA automation engineer, learning Java (Spring), Ruby (Ruby on Rails). Interested in webapp development, telegram bots.</p>
-      <p><%= link_to "Jet Brains", "https://www.jetbrains.com/", target: '_blank' %> user.</p>
-
+      <br>
+      <p>QA automation engineer since May, 2018.</p>
+      <p>
+        Junior developer.<br> Studying Ruby (with Ruby on Rails), Java (Spring), Swift.<br>
+        Interested in webapp development, iOS/OSx.
+        <%= link_to "JetBrains", "https://www.jetbrains.com/", target: '_blank' %> user.
+      </p>
+      <br>
+      <p><%= link_to 'Write me', contacts_path %> if you need more additional information.</p>
     </div>
-  </div>
-  <div class="links">
-    <%= link_to image_tag('facebook.png'), "https://www.facebook.com/gregoryawesoman", target: '_blank' %>
-    <%= link_to image_tag('instagram.png'), "https://www.instagram.com/gregoryawesoman/", target: '_blank'%>
   </div>
 </div>

@@ -1,26 +1,36 @@
-$navbar-default-bg: #006400;
+//main background color
+//$bg-color: #333;
+$bg-color: #232323;
+//color for navigation and jumbo block
+$elements-color: #00a2a5;
+//color for plain text
+$plain-text-color: #777;
+//color for nav buttons
+$nav-buttons-color: $bg-color;
+
+//customizing bootstrap's defaults colors
+$navbar-default-bg: $elements-color;
+$navbar-default-brand-color: $nav-buttons-color;
+$navbar-default-brand-hover-color: #777;
+$navbar-default-link-color: $navbar-default-brand-color;
+$navbar-default-link-hover-color: $navbar-default-brand-hover-color;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
 body {
-  background-color: #232323;
+  background-color: $bg-color;
+  color: $plain-text-color;
 }
 
-#logo {
-  float: left;
-  color: #fff;
+.nav-btn {
   text-transform: uppercase;
   letter-spacing: -1px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
-#logo:hover {
-  color: #fff;
+.nav-btn:hover {
   text-decoration: none;
-}
-#works, #about {
-  color: white;
 }
 
 .center {
@@ -28,17 +38,35 @@ body {
 }
 
 .jumbotron {
-  background-color: #414141;
+  margin-top: 20px;
+  color: $bg-color;
+  background-color: $elements-color;
   height: 550px;
+}
+
+.jumbotron p {
+  font-weight: 400;
+}
+
+
+.img-custom {
+  float: left;
+  background-color: $bg-color;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  display: block;
+}
+.description {
+  float: right;
+  text-align: center;
 }
 
 footer {
   width: 100%;
   margin-top: 45px;
+  margin-bottom: 10px;
   padding-top: 5px;
-  border-top: 1px solid #eaeaea;
+  border-top: 3px solid $elements-color;
   color: #777;
-}
-footer small {
-
+  text-align: center;
 }
