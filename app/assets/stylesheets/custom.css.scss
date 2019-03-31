@@ -7,11 +7,13 @@ $elements-color: #00a2a5;
 $plain-text-color: #777;
 //color for nav buttons
 $nav-buttons-color: $bg-color;
+//nav hovers
+$nav-hover: #00e1e1;
 
 //customizing bootstrap's defaults colors
 $navbar-default-bg: $elements-color;
 $navbar-default-brand-color: $nav-buttons-color;
-$navbar-default-brand-hover-color: #777;
+$navbar-default-brand-hover-color: $nav-hover;
 $navbar-default-link-color: $navbar-default-brand-color;
 $navbar-default-link-hover-color: $navbar-default-brand-hover-color;
 
