@@ -48,13 +48,17 @@ body {
   font-weight: 400;
 }
 
+.img-container {
+  max-height: 454px;
+}
 
 .img-custom {
-  float: left;
-  background-color: $bg-color;
-  border: 3px solid #fff;
+  border: 3px solid $bg-color;
   border-radius: 10px;
   display: block;
+  object-fit: scale-down;
+  width: auto;
+  max-height: inherit;
 }
 .description {
   float: right;
