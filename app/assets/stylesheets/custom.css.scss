@@ -39,6 +39,17 @@ body {
   text-align: center;
 }
 
+.top-mrg {
+  margin-top: 40px;
+}
+
+.description {
+  background-color: $elements-color;
+  border-radius: 10px;
+  max-width: inherit;
+  max-height: inherit;
+}
+
 .jumbotron {
   margin-top: 20px;
   color: $bg-color;
